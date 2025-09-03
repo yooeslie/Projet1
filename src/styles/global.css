@@ -1,1 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", sans-serif, system-ui;
+  --color-card: white;
+  --color-bg: hsl(240, 78%, 98%);
+  --color-title: hsl(232, 13%, 50%);
+  --color-line: hsl(234, 14%, 86%);
+  --color-subtitle: hsl(234, 14%, 74%);
+  --color-dark: hsl(232, 13%, 33%);
+  --background-image-grad: var(--linear-gradient);
+}
+
+@layer base {
+  :root {
+    /* Tokens */
+    --color-primary-gradient: oklch(0.7548 0.1033 280.46);
+    --color-secondary-gradient: oklch(0.5923 0.1644 277.85);
+    --color-green: green;
+
+    /* Contextualisation */
+    --linear-gradient: linear-gradient(
+      130deg,
+      var(--color-primary-gradient),
+      var(--color-secondary-gradient)
+    );
+  }
+}

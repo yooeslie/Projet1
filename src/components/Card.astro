@@ -1,0 +1,18 @@
+---
+const{title, price, storage, users, send} = Astro.props
+---
+
+<article class="">
+    <section class="p-[2rem] flex flex-col justify-center text-center bg-(--color-card) rounded-[0.5rem]">
+		<h3 class="text-[18px] font-bold text-(--color-title)"> {title} </h3>
+		<p class="font-bold text-[50px] text-(--color-dark) border-b border-b-(--color-line)"> <span class="text-[35px]">$</span> {price}</p>
+        <ul class="text-[15px] text-(--color-title) font-[500]  ">
+            <li class="border-b border-b-(--color-line) p-[0.5rem]"> {storage} </li>
+            <li class="border-b border-b-(--color-line) p-[0.5rem]"> {users} </li>
+            <li class="border-b border-b-(--color-line) p-[0.5rem]"> {send} </li>
+        </ul>
+
+        <p class="bg-grad rounded-[0.5rem] p-[0.7rem] text-(--color-card) font-[600] text-[15px] tracking-[1.5px] uppercase mt-[2rem]"> Learn More</p>
+        
+    </section>
+</article>

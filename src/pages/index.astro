@@ -1,10 +1,20 @@
 ---
+import Card from '../components/Card.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
-
-
 ---
 
+<body class="bg-(--color-bg)">
+
+
 <BaseLayout title="Page Astro">
-	<h1> Salut </h1>
-	test !
+
+	<h1 class="flex justify-center text-(--color-title) font-bold text-[25px] mt-[3rem]"> Our Pricing </h1>
+
+	<Card title= Basic
+	price = 199.99 
+	storage= "500 GB Storage"
+	users="2 Users Allowed"
+	send="Send up to 3 GB"/>
+		
 </BaseLayout>
+</body>
